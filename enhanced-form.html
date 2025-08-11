@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Assignment</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Enhanced HTML5 Page</h1>
+      <p>Demonstrating enhanced content and form mastery.</p>
+    </header>
+
+    <main>
+      <!-- Section 1: Lists -->
+      <section>
+        <h2>Content Lists</h2>
+        <p>Here are some examples of different types of lists.</p>
+
+        <h3>An Unordered List (Skills)</h3>
+        <ul>
+          <li>HTML5 Structure & Semantics</li>
+          <li>CSS Styling</li>
+          <li>Form Validation</li>
+          <li>Accessibility (A11Y) Best Practices</li>
+        </ul>
+
+        <h3>An Ordered List (Assignment Steps)</h3>
+        <ol>
+          <li>Create a multi-section page.</li>
+          <li>Add lists, tables, and media.</li>
+          <li>Design a complete HTML5 form.</li>
+          <li>Use native validation attributes.</li>
+          <li>Submit `enhanced-form.html`.</li>
+        </ol>
+      </section>
+
+      <!-- Section 2: Table -->
+      <section>
+        <h2>Project Milestones</h2>
+        <p>This table outlines the key project milestones and their status.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Milestone</th>
+              <th>Status</th>
+              <th>Due Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planning Phase</td>
+              <td>Complete</td>
+              <td>2025-12-01</td>
+            </tr>
+            <tr>
+              <td>Initial Draft</td>
+              <td>In Progress</td>
+              <td>2025-12-15</td>
+            </tr>
+            <tr>
+              <td>Final Submission</td>
+              <td>Pending</td>
+              <td>2025-12-30</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: Media -->
+      <section>
+        <h2>Embedded Media</h2>
+        <p>Demonstrating the use of audio and video elements.</p>
+
+        <h3>A Sample Audio Clip</h3>
+        <!-- The 'controls' attribute provides play/pause, volume, etc. -->
+        <!-- The 'source' element points to the audio file. -->
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>A Sample Video Clip</h3>
+        <!-- The 'controls' attribute adds the video controls. -->
+        <!-- 'width' and 'height' can be specified, but it's often better to use CSS for responsiveness. -->
+        <video width="320" height="240" controls>
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Section 4: The Form -->
+      <section>
+        <h2>Assignment Feedback Form</h2>
+        <p>
+          Please fill out this form to provide your feedback. All fields are
+          required unless otherwise noted.
+        </p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="full-name">Full Name:</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full_name"
+              placeholder="Wanjiru Ian"
+              required
+              autocomplete="name"
+            />
+
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ianwanjiru@example.com"
+              required
+              autocomplete="email"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Feedback Details</legend>
+
+            <label for="assignment-rating">Assignment Rating (1-10):</label>
+            <input
+              type="number"
+              id="assignment-rating"
+              name="rating"
+              min="1"
+              max="10"
+              required
+            />
+
+            <label for="difficulty">Difficulty Level:</label>
+            <select id="difficulty" name="difficulty" required>
+              <option value="">-- Please choose an option --</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+
+            <label for="suggestions">Suggestions for Improvement:</label>
+            <textarea
+              id="suggestions"
+              name="suggestions"
+              rows="4"
+              placeholder="Enter your suggestions here..."
+              minlength="20"
+            ></textarea>
+
+            <label for="completion-date">Date of Completion:</label>
+            <input
+              type="date"
+              id="completion-date"
+              name="completion_date"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Final Confirmation</legend>
+            <label for="read-only-field">This field is read-only:</label>
+            <!-- 'readonly' attribute prevents the user from changing this value -->
+            <input
+              type="text"
+              id="read-only-field"
+              value="Confirmation"
+              readonly
+            />
+
+            <div>
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">I agree to the terms and conditions.</label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
